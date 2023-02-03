@@ -7,6 +7,7 @@ python3 yuantian_sql_scan.py -u http://127.0.0.1:1111 单个url测试
 
 python3 yuantian_sql_scan.py -f url.txt 批量检测
 ![](./1.png)
+
 扫描结束后会在当前目录生成vuln.txt记录存在漏洞的url
 
 
